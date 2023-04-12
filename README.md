@@ -1,1 +1,1 @@
-https://github.com/cjcompton/website-app.git
+This is my personal website using React and Bootstrap
