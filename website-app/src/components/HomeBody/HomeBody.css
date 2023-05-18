@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+.row {
+    /*
+    background-color: rgb(206, 228, 235);
+    */
+}
+
+#photo {
+    background-color: blanchedalmond;
+    height: 700px;
+    border-radius: 50px;
+}
+
+#aboutMe {
+    height: 500px;
+}
+
+#resumeOrHobbies {
+    background: #D9C3BA;
+    border-radius: 50px;
+    height: 200px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    padding-top: 25px;
+}
+
+p {
+    padding-top: 25px;
+    font-size: 12px;
+}
