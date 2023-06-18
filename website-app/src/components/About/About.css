@@ -1,0 +1,13 @@
+#row {
+    background-color: black;
+}
+
+#col1 {
+    background-color: aqua;
+    height: 200px;
+}
+
+#col2 {
+    background-color: orange;
+    height: 200px;
+}
