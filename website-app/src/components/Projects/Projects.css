@@ -1,0 +1,9 @@
+#fullBackground {
+    background: linear-gradient(#659DBD, #8D8741);
+    height: 200px;
+}
+
+#projectCarousel {
+    height: 300px;
+    background-color: #8D8741;
+}

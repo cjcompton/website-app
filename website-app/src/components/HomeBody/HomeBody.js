@@ -6,15 +6,22 @@ const DownloadPdf = () => {
 
     const link = document.createElement('a');
     link.href = pdfLink;
-    
+    link.download = 'Charlie Compton\'s resume.pdf';
+    link.target = '_blank';
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+
 }
 
 const HomeBody = () => {
     return (
-        <div className="row" id="contentsOfHomeBody">
-            <div className="col-sm-1"></div>
-            <div className="col-sm-5">
-                <div className="container-sm-5 p-2 p-sm-0" id="aboutMe">
+        <div className="row p-0 m-0">
+            <div className="col-sm-6">
+                <div className="p-2" id="aboutMe">
                     <h1>Hello, My Name is Charlie Compton</h1>
                     <p>
                         About Me: I'm a recent college graduate with interests in UI design,
@@ -23,13 +30,16 @@ const HomeBody = () => {
                         links below, like my resume 
                     </p>
                 </div>
-                <div className="" id="resumeOrHobbies">
-                    <button id="resumeButton" onClick={DownloadPdf}></button>
+                <div className="m-2" id="resumeOrHobbies">
+                    <p id="downloadParagraph"></p>
+                    <button id="resumeButton" onClick={DownloadPdf}>Download</button>
                 </div>
             </div>
-            <div className="col-sm-5" id="photo">
+            <div className="col-sm-6 d-none d-sm-block">
+                <div className="p-2 mt-4" id="photo">
+
+                </div>
             </div>
-            <div className="col-sm-1"></div>
         </div>
     );
 }
