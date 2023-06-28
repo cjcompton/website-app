@@ -1,20 +1,20 @@
 #transitionToCarousel {
-    background: linear-gradient(#659DBD, #8D8741);
+    background: linear-gradient(#0F4C75, #1B262C);
     height: 200px;
 }
 
 #projectCarousel {
     height: 100%;
-    background-color: #8D8741;
+    background-color: #1B262C;
 }
 
 p {
-    color: black;
+    color: white;
     font-size: 14px;
 }
 
 #transitionToContact {
-    background: linear-gradient(#8D8741, #659DBD);
+    background: #1B262C;
     height: 200px;
 }
 
