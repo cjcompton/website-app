@@ -1,8 +1,3 @@
-#transitionToCarousel {
-    background: linear-gradient(#0F4C75, #1B262C);
-    height: 200px;
-}
-
 #projectCarousel {
     height: 100%;
     background-color: #1B262C;
@@ -11,11 +6,6 @@
 p {
     color: white;
     font-size: 14px;
-}
-
-#transitionToContact {
-    background: #1B262C;
-    height: 200px;
 }
 
 #linkButton {
@@ -28,3 +18,17 @@ p {
     padding-right: 15px;
     padding-left: 15px;
 }
+
+#projectCarousel {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%; 
+  }
+  
+  .carousel-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }

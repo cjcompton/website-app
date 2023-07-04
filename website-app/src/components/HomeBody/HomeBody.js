@@ -26,23 +26,22 @@ const HomeBody = () => {
             </div>
             <div className="container">
                 <div className="row p-0 m-0">
-                    <div className="col-sm-6 p-2" id="aboutMe">
+                    <div className="col-sm-6 p-3" id="aboutMe">
                         <div className="position-relative z-index-2">
                             <h1>Hello, My Name is Charlie Compton</h1>
-                            <p>
+                            <p id="theP">
                                 About Me: I'm a recent college graduate with interests in UI design,
                                 Software Development, and more! This also needs a better font, maybe can do
                                 a different font collor or something interesting
                                 links below, like my resume 
                             </p>
+                            <div>
+                                <button id="resumeButton" onClick={DownloadPdf}>Download</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className="m-2" id="resumeOrHobbies">
-                <p id="downloadParagraph"></p>
-                <button id="resumeButton" onClick={DownloadPdf}>Download</button>
         </div>
         </>
     );
