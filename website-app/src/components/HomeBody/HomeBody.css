@@ -1,222 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
+#viewHeight {
+  height: 100vh;
+}
+
 .row {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 #aboutMe {
-    height: 100%;
+  height: 100%;
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 70px;
-    padding-top: 25px;
-    color: white;
-    opacity: 0;
-    animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 5.5s forwards;
+  font-family: 'Inter', sans-serif;
+  font-size: 70px;
+  padding-top: 25px;
+  color: white;
+  opacity: 0;
+  animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 5.5s forwards;
 }
 
 #theP {
-    padding-top: 25px;
-    font-size: 24px;
-    color: white;
-    opacity: 0;
-    animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 6s forwards;
-}
-
-#resumeButton {
-  appearance: none;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 15px;
-  box-sizing: border-box;
+  padding-top: 25px;
+  font-size: 24px;
   color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0;
-  min-height: 60px;
-  min-width: 0;
-  outline: none;
-  padding: 16px 24px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 150px;
-  will-change: transform;
   opacity: 0;
   animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 6s forwards;
 }
 
-#resumeButton:disabled {
-  pointer-events: none;
-}
-
-#resumeButton:hover {
-  color: black;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
-}
-
-#resumeButton:active {
-  box-shadow: none;
-  transform: translateY(0);
-}
-
 /*
-    this is all bubble stuff 
+  this is all bubble stuff 
 */
 
 #BGBubble {
-    height: 1000px;
-    overflow: hidden;
-    position: relative;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 #circle1 {
-    width: 1000px;
-    height: 1000px;
-    background-color: #138400;
-    border-radius: 50%;
-    opacity: 0; 
-    animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 2s forwards, blurring 1s 4.5s forwards;
-    position: absolute;
-    left: -225px;
-    top: -250px;
+  width: 1000px;
+  height: 1000px;
+  background-color: #2A3237;
+  border-radius: 50%;
+  opacity: 0; 
+  animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 2s forwards, blurring 1s 4.5s forwards;
+  position: absolute;
+  left: -225px;
+  top: -250px;
 }
 
 #circle2 {
-    width: 1100px;
-    height: 1100px;
-    background-color: #064F00;
-    border-radius: 50%;
-    opacity: 0; 
-    animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 2.5s forwards, blurring 1s 4.5s forwards;
-    position: absolute;
-    left: 550px;
-    top: -225px;
+  width: 1100px;
+  height: 1100px;
+  background-color: #1E2328;
+  border-radius: 50%;
+  opacity: 0; 
+  animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 2.5s forwards, blurring 1s 4.5s forwards;
+  position: absolute;
+  left: 550px;
+  top: -225px;
 }
 
 #circle3 {
-    width: 1200px;
-    height: 1200px;
-    background-color: #0E6500;
-    border-radius: 50%;
-    opacity: 0; 
-    animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 3s forwards, blurring 1s 4.5s forwards;
-    position: absolute;
-    left: -300px;
-    top: 375px;
+  width: 1200px;
+  height: 1200px;
+  background-color: #32383E;
+  border-radius: 50%;
+  opacity: 0; 
+  animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 3s forwards, blurring 1s 4.5s forwards;
+  position: absolute;
+  left: -300px;
+  top: 375px;
 }
 
 #circle4 {
-    width: 1400px;
-    height: 1400px;
-    background-color: #014608;
-    border-radius: 50%;
-    opacity: 0; 
-    animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 3.5s forwards, blurring 1s 4.5s forwards;
-    position: absolute;
-    left: 450px;
-    top: 550px;
+  width: 1400px;
+  height: 1400px;
+  background-color: #242A30;
+  border-radius: 50%;
+  opacity: 0; 
+  animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 3.5s forwards, blurring 1s 4.5s forwards;
+  position: absolute;
+  left: 450px;
+  top: 550px;
 }
 
 @media (max-width: 767.98px) {
-    /* Styles for extra small devices (up to 767.98px) */
-    #BGBubble {
-        height: 900px;
-        overflow: hidden;
-        position: relative;
-    }
+  /* Styles for extra small devices (up to 767.98px) */
 
-    #circle1 {
-      width: 600px;
-      height: 600px;
-      left: -100px;
-      top: -100px;
-    }
-  
-    #circle2 {
-      width: 700px;
-      height: 700px;
-      left: 150px;
-      top: -50px;
-    }
-  
-    #circle3 {
+  #circle1 {
+    width: 600px;
+    height: 600px;
+    left: -100px;
+    top: -100px;
+  }
+
+  #circle2 {
+    width: 700px;
+    height: 700px;
+    left: 150px;
+    top: -50px;
+  }
+
+  #circle3 {
+    width: 800px;
+    height: 800px;
+    left: -325px;
+    top: 300px;
+  }
+
+  #circle4 {
+    width: 900px;
+    height: 900px;
+    left: 50px;
+    top: 375px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for small devices (768px - 991.98px) */
+
+  #circle1 {
       width: 800px;
       height: 800px;
-      left: -325px;
-      top: 300px;
-    }
+      left: -100px;
+      top: -200px;
+  }
   
-    #circle4 {
+    #circle2 {
       width: 900px;
       height: 900px;
-      left: 50px;
-      top: 375px;
-    }
+      left: 250px;
+      top: -150px;
   }
   
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    /* Styles for small devices (768px - 991.98px) */
-    #BGBubble {
-        height: 1100px;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #circle1 {
-        width: 800px;
-        height: 800px;
-        left: -100px;
-        top: -200px;
-    }
-    
-      #circle2 {
-        width: 900px;
-        height: 900px;
-        left: 250px;
-        top: -150px;
-    }
-    
-      #circle3 {
-        width: 1000px;
-        height: 1000px;
-        left: -250px;
-        top: 350px;
-    }
-    
-      #circle4 {
-        width: 1100px;
-        height: 1100px;
-        left: 275px;
-        top: 400px;
-    }
+    #circle3 {
+      width: 1000px;
+      height: 1000px;
+      left: -250px;
+      top: 350px;
   }
+  
+    #circle4 {
+      width: 1100px;
+      height: 1100px;
+      left: 275px;
+      top: 400px;
+  }
+}
 
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 @keyframes blurring {
-    from {
-        filter: blur(0px);
-    }
-    to {
-        filter: blur(50px);
-    }
+  from {
+      filter: blur(0px);
+  }
+  to {
+      filter: blur(50px);
+  }
+}
+
+.projects-container {
+  z-index: 1; 
 }

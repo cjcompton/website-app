@@ -1,16 +1,25 @@
 #projectCarousel {
     height: 100%;
-    background-color: #1B262C;
+}
+
+h3 {
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 6.5s forwards;
 }
 
 p {
+    font-size: 24px;
     color: white;
-    font-size: 14px;
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 7s forwards;
 }
 
 #linkButton {
     color: white;
-    background-color: orange;
+    background-color: steelblue; 
     border: 0px;
     border-radius: 10px;
     padding-top: 10px;
@@ -18,17 +27,3 @@ p {
     padding-right: 15px;
     padding-left: 15px;
 }
-
-#projectCarousel {
-    position: relative;
-    width: 100%;
-    padding-bottom: 60%; 
-  }
-  
-  .carousel-inner {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-  }
