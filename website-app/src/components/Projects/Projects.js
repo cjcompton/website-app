@@ -14,7 +14,7 @@ const Projects = () => {
     return (
         <>
         <div className="d-flex align-items-center">
-            <div className="col-sm-12 mt-5">
+            <div className="col-sm-12 my-5">
                 <h3 className="px-2">Personal Website</h3>
                 <p className="px-2">
                     This website was created using HTML, CSS, ReactJS, and Bootstrap. I have been teaching myself
@@ -27,7 +27,7 @@ const Projects = () => {
         </div>
 
         <div className="d-flex align-items-center">
-            <div className="col-sm-12 mt-5">
+            <div className="col-sm-12 my-5">
                 <h3 className="px-2">Noodle</h3>
                 <p className="px-2">
                     Noodle was a project created for a Lewis and Clark College Professor to help

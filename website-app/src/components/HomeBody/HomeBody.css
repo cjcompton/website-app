@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 #viewHeight {
-  height: 100vh;
+  height: 100%;
 }
 
 .row {
@@ -10,6 +10,7 @@
 
 #aboutMe {
   height: 100%;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -29,11 +30,16 @@ h1 {
   animation: fade-in 1s cubic-bezier(0.4, 0, 1, 1) 6s forwards;
 }
 
+#projHead {
+  font-size: 60px;
+}
+
 /*
   this is all bubble stuff 
 */
 
 #BGBubble {
+  min-height: 100vh;
   height: 100%;
   overflow: hidden;
   position: relative;
